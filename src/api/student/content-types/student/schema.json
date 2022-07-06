@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "students",
+  "info": {
+    "singularName": "student",
+    "pluralName": "students",
+    "displayName": "student ",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nameFull": {
+      "type": "string"
+    },
+    "nameFirst": {
+      "type": "string"
+    },
+    "nameShort": {
+      "type": "string"
+    },
+    "punished": {
+      "type": "boolean",
+      "default": false
+    },
+    "canceledBooks": {
+      "type": "integer"
+    },
+    "unconfirmedBooks": {
+      "type": "integer"
+    },
+    "punishmentEndTime": {
+      "type": "datetime"
+    },
+    "punishmentsCounter": {
+      "type": "integer"
+    },
+    "officialCode": {
+      "type": "string"
+    },
+    "bookings": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::booking.booking",
+      "mappedBy": "student"
+    }
+  }
+}

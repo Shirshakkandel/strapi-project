@@ -1,0 +1,68 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bookings",
+  "info": {
+    "singularName": "booking",
+    "pluralName": "bookings",
+    "displayName": "Booking",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "email": {
+      "type": "email"
+    },
+    "endTimestamp": {
+      "type": "datetime"
+    },
+    "room": {
+      "type": "string"
+    },
+    "startTimestamp": {
+      "type": "datetime"
+    },
+    "status": {
+      "type": "string"
+    },
+    "officialCode": {
+      "type": "string"
+    },
+    "studentName": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "undeletable": {
+      "type": "boolean"
+    },
+    "weekNum": {
+      "type": "integer"
+    },
+    "dayinWeek": {
+      "type": "integer"
+    },
+    "year": {
+      "type": "integer"
+    },
+    "Time": {
+      "type": "string"
+    },
+    "student": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::student.student",
+      "inversedBy": "bookings"
+    },
+    "idcode": {
+      "type": "string",
+      "unique": true
+    },
+    "supervision": {
+      "type": "string"
+    }
+  }
+}

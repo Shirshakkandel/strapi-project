@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "regestration_requests",
+  "info": {
+    "singularName": "regestration-request",
+    "pluralName": "regestration-requests",
+    "displayName": "regestrationRequest",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "isNewUser": {
+      "type": "boolean",
+      "default": true
+    },
+    "Name": {
+      "type": "string"
+    },
+    "userType": {
+      "type": "string"
+    },
+    "officialCode": {
+      "type": "string"
+    }
+  }
+}

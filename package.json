@@ -9,7 +9,6 @@
     "build": "strapi build",
     "strapi": "strapi"
   },
-  "devDependencies": {},
   "dependencies": {
     "@strapi/plugin-graphql": "4.0.7",
     "@strapi/plugin-i18n": "4.0.7",
@@ -17,6 +16,8 @@
     "@strapi/strapi": "4.0.7",
     "pg": "^8.7.1",
     "pg-connection-string": "^2.5.0",
+    "qrcode": "1.5.0",
+    "qrcode-generator": "^1.4.4",
     "sqlite3": "5.0.2"
   },
   "author": {
